@@ -22,7 +22,7 @@ CREATE TABLE dep_emp
 (
 	emp_no INT NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
-	dept_no VARCHAR(4) NOT NULL
+	dept_no VARCHAR(4) NOT NULL,
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
 	from_date VARCHAR(20) NOT NULL,
 	to_date VARCHAR(20) NOT NULL
@@ -60,10 +60,9 @@ CREATE TABLE titles
 );
 
 
+-- List the following details of each employee: employee number, last name, first name, gender, and salary.
 
-   -- List the following details of each employee: employee number, last name, first name, gender, and salary.
-
-   -- List employees who were hired in 1986.
+-- List employees who were hired in 1986.
 
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 
